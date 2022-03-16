@@ -1,0 +1,57 @@
+body{
+    font-family: 'Pretendard', sans-serif !important;
+  }
+
+.container-box{
+    padding: 10px 60px;
+    max-width: 500px;
+    padding: 10px 60px;
+    margin: auto !important;
+}
+
+
+.card{
+    border-radius: 8px !important;
+    border-color: rgba(0,0,0, 0) !important;
+    background: rgba(255,255,255,0.8) !important;
+    overflow: hidden !important;
+    /* backdrop-filter: blur(5px) !important; */
+}
+
+
+.card-header-t{
+    text-align: left !important;
+}
+
+
+#scroll-container{
+    color: gray;
+    font-size: small;
+    /* width: 1000px;
+    overflow: auto;
+    width: max-content; */
+}
+
+@media screen and (max-width: 599px) {
+
+    .purple-text{
+        height: 55px !important;
+        padding: 5px 10px;
+        border: 1px solid black;
+        margin: 6px;
+    }
+    .container-box{
+        padding: 10px 15px !important;
+    }
+    .pcont-box{
+        height: 300px !important;
+        padding: 0 30px !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 821px) {
+    .pcont-box{
+        margin-bottom: 100px;
+    }
+}
+/* 600 - 821 */
