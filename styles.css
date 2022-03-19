@@ -9,6 +9,15 @@ body{
     margin: auto !important;
 }
 
+.btn-drop{
+    border-radius: 100px !important;
+    margin: 0 4px;
+    font-weight: 700 !important;
+}
+
+.dropdown-menu {
+    margin-bottom: 5px !important;
+  }
 
 .card{
     border-radius: 8px !important;
