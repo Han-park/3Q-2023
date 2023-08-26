@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:url" content="https://han-park.github.io/1Q-2022/">
+    <meta property="og:title" content="종한 박 1Q 2022">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://han-park.github.io/1Q-2022/src/profile-jonghan-enhanced.jpg">
+    <meta property="og:description" content="박종한, Design Technologist">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="fonts" href="fonts.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7ebbce7bc8.js" crossorigin="anonymous"></script>
+
+
+    <title>종한 박 1Q 2022</title>
+</head>
+<body>
+        <!-- Template Three js from this pen https://codepen.io/Mamboleoo/pen/zyjYGV -->
+          <canvas id="canvas" class="background-canvas" width="32" height="32" style="width: 100%; height: 100%; position: fixed; top:0; z-index:-1;"></canvas>
+
+          <div class="btn-container" style="position: fixed; bottom: 16px; right: 16px; display: flex; z-index: 2;">
+
+
+          
+          <div id="contact" class="dropdown">
+            <a class="btn-drop btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.instagram.com/jonghan_future/">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/han0park/">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="tel:+821041670321">Phone</a></li>
+              <li><a class="dropdown-item" href="mailto:han-park@g.hongik.ac.kr">Email</a></li>
+              <li><a class="dropdown-item" href="https://www.vcard.link/card/DlX2.vcf">내 연락처에 저장</a></li>
+            </ul>
+          </div>
+
+          <div id="db" class="dropdown">
+            <!-- <a class="btn-drop btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item disabled">(통합 중입니다)</a></li>
+              <li><a class="dropdown-item" href="https://han-park.oopy.io">2022 Ver.</a></li>
+              <li><a class="dropdown-item" href="https://han-park-2.myportfolio.com">2021 Ver.</a></li>
+              <li><a class="dropdown-item" href="https://jonghanpark.myportfolio.com">2020 Ver.</a></li>
+              <li><a class="dropdown-item" href="https://ssam032000.wixsite.com/jonghanpark">2017 Ver.</a></li>
+            </ul> -->
+            <a href="https://jonghan.substack.com">
+            <button type="button" class="btn btn-primary btn-drop">Blog<span class="fa-regular fa-arrow-up-right-from-square"></span></button>
+            </a>
+          </div>
+          
+
+
+          </div>
+
+          <div class="body-cont" style="position: absolute; z-index: 0; width: 100vw;">
+            
+          <div class="container-box">
+          <br>
+          
+            <div class="card" style="margin: 10px; padding: 10px;">
+              <div class="card-body">
+                <div class="card-header-t">
+                <h3 class="card-title" style="font-size: 24px; font-weight: 600;">종한 박</h3>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Seminar Session</h6> -->
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted">Community Enthusiast</h6>
+                  <p class="card-text">현재 IT 메이커들을 위한 SNS <a href="https://disquiet.io/">디스콰이엇</a> 팀에서 커뮤니티 빌딩을 맡고 있습니다.</p>
+              </div>
+            </div>
+
+            <div class="card" style="margin: 10px;">
+
+              <div class="card-uppercaption-t" style="background-color: rgba(209, 209, 209, 0.75)">
+                <p class="card-uppercapption" style="font-size: 15px; font-weight: bold; color: #444; text-align: center; margin: 8px;">Profile_20220302.jpg</p>
+                </div>
+
+              <div class="card-body" style="padding: 0px;">
+                <img src="src/profile-jonghan-enhanced.jpg" alt="profile picture" style="width: 100%;">
+                <!-- <p class="card-text" style="padding: 10px;"> -->
+                <!-- <a href="#" class="card-link">Card link</a> -->
+              </div>
+            </div>
+
+            <div class="card" style="margin: 10px;">
+
+              <div class="card-uppercaption-t" style="background-color: rgba(209, 209, 209, 0.75)">
+                <p class="card-uppercapption" style="font-size: 15px; font-weight: bold; color: #444; text-align: center; margin: 8px;">3 Tracks</p>
+                </div>
+
+              <div class="card-body" style="padding: 20px;">
+                <p class="card-text">초등학교 전교회장이었던 2012년부터,<br>지난 10년간 좇아온 3가지는 다음과 같습니다: <br></p>
+                <h5 class="card-title">🌐 &nbsp;커뮤니티와 자발성</h5>
+                <h5 class="card-title">📽️ &nbsp;미의 정량화</h5>
+                <h5 class="card-title">🌱 &nbsp;지속가능성</h5>
+                <!-- <a href="#" class="card-link">Card link</a> -->
+              </div>
+              
+            </div>
+
+
+            <div class="card" style="margin: 10px; padding: 10px;">
+              <div class="card-body">
+                <div class="card-header-t">
+                <h6 class="card-subtitle mb-2 text-muted">Track 1</h6>
+                <h5 class="card-title">🌐 &nbsp;커뮤니티와 자발성</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Seminar Session</h6> -->
+                </div>
+                <p class="card-text">운 좋게 초중고 학생회장을 모두 맡았습니다. 회의를 진행하고, 친구들을 꼬드겨 행사를 기획하고 운영하는 과정에서 개인의 내적 동기를 모아 문제를 해결하는 '민주주의 기술'에 관심을 가지게 되었습니다. <br><br>
+                  국가/기업/개인간의 경쟁이라는 현실을 인정하면서, 자아실현/합의/보상 등의 키워드에 대해 이상적인 사회 구조를 그려보고, 커뮤니티 베이스로 실험하고 있습니다. <br><br>
+                  현재 프로젝트 집단 Higher Definition, 그게 확장된 커뮤니티 PIXEL, 러닝크루 00runners, 러닝크루의 사이드프로젝트 Runpotify, 주니어 디자이너 네트워크 LiftOff를 만들고 활동하고 있습니다.</p>
+                
+                  <!-- <a href="#" class="card-link text-muted" style="text-decoration: none;">more</a> -->
+                
+                <a href="https://jonghan.substack.com/p/--2f7?s=w" style="text-decoration: none; color: #131313;">
+                <div class="article-btn" style="border-radius: 8px; padding: 20px; background-color: rgb(243, 243, 243); margin-bottom: 10px;">
+                  <h5 class="article-title">[HD2.0] 우리가 만드려고 하는 것은 궁극적으로 무엇인가</h5>
+                  <p class="article-description" style="margin-bottom: 0; color: #777">jonghan.substack.com</p>
+                </div>
+              </a>
+
+                <a href="https://jonghan.substack.com/p/higher-efficiency-web?s=w" style="text-decoration: none; color: #131313">
+                <div class="article-btn" style="border-radius: 8px; padding: 20px; background-color: rgb(243, 243, 243);">
+                  <h5 class="article-title">Higher Efficiency Web</h5>
+                  <p class="article-description" style="margin-bottom: 0; color: #777">jonghan.substack.com</p>
+                </div>
+              </a>
+
+              </div>
+            </div>
+
+            <div class="card" style="margin: 10px; padding: 10px;">
+              <div class="card-body">
+                <div class="card-header-t">
+                <h6 class="card-subtitle mb-2 text-muted">Track 2</h6>
+                <h5 class="card-title">📽️ &nbsp;미의 정량화</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Seminar Session</h6> -->
+                </div>
+                <p class="card-text">PC 다루는 법을 가르쳐 주시고 늘 고성능 전자기기를 지원해주신 아버지와, 사진작가이자 책/영상/가구/집까지 다 직접 만드시는 어머니의 영향을 받아 어린 시절 집에서 컴퓨터를 가지고 사부작댔습니다.<br><br>
+                사진을 찍고 포토샵으로 만지고, 녹음한 기타 연주와 작곡한 미디 파일을 합쳐보고, 뛰어다니며 찍은 동영상 여러개를 합성해 보면서, '내가 멋지다고 생각하면 그것이 아름다움 아닌가'라는 의심을 하게 되었습니다.<br><br>
+                어린 시절의 답을 찾기 위하여 대학에 입학해서는 예술학을 공부하고, 신경과학 및 Algorithm based design에 관심을 가지고 있습니다. 머지않아 데이터를 기반으로 비주얼을 만드는 '데이터 시각화'와 지금의 '그래픽 디자인' 분야가 통합될 것이라고 믿는 사람입니다.</p>
+                <!-- <a href="#" class="card-link text-muted" style="text-decoration: none;">more</a> -->
+              
+              
+                <a href="https://jonghan.substack.com/p/lift-off-seminar-?s=w" style="text-decoration: none; color: #131313">
+                  <div class="article-btn" style="border-radius: 8px; padding: 20px; background-color: rgb(243, 243, 243); margin-bottom: 10px;">
+                    <h5 class="article-title">Lift Off! Seminar: 나는 개 쩌는 디자이너가 되기 위해 무엇을 하고 있는가</h5>
+                    <p class="article-description" style="margin-bottom: 0; color: #777">jonghan.substack.com</p>
+                  </div>
+                </a>
+
+                <a href="https://jonghan.substack.com/p/the-ultimate-design-machine?s=w" style="text-decoration: none; color: #131313">
+                  <div class="article-btn" style="border-radius: 8px; padding: 20px; background-color: rgb(243, 243, 243); margin-bottom: 10px;">
+                    <h5 class="article-title">The Ultimate Design Machine</h5>
+                    <p class="article-description" style="margin-bottom: 0; color: #777">jonghan.substack.com</p>
+                  </div>
+                </a>
+
+                <a href="https://jonghan.substack.com/p/-1-?s=w" style="text-decoration: none; color: #131313">
+                  <div class="article-btn" style="border-radius: 8px; padding: 20px; background-color: rgb(243, 243, 243);">
+                    <h5 class="article-title">건축적 인공지능 (1) 책을 읽게 된 계기</h5>
+                    <p class="article-description" style="margin-bottom: 0; color: #777">jonghan.substack.com</p>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="card" style="margin: 10px; padding: 10px;">
+              <div class="card-body">
+                <div class="card-header-t">
+                <h6 class="card-subtitle mb-2 text-muted">Track 3</h6>
+                <h5 class="card-title">🌱 &nbsp;지속가능성</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Seminar Session</h6> -->
+                </div>
+                <p class="card-text">고등학생 때는 '지속가능한 건축 전문가'를 장래희망으로 삼고 지냈습니다. 자동으로 작동하는 시스템에 흥미를 가지고 있는 사람으로서, 지구 생태계가 무너지는 모습을 지켜보고만 있을 순 없기 때문입니다. <br><br>
+                  인간의 무분별한 개발과 소비 뒤에 따라오는 지구의 이상 반응에 경각심과 책임감을 가지고 있습니다. 우리 세대에서 럭셔리의 기준을 재정립하고 경제성장률을 기준으로 한 정책을 보완하지 않으면 안 될 거라고 생각합니다.<br><br>
+                  환경을 고려한 소비가 멋진 것으로 인정받기 시작한 지금의 문화가 짧은 유행으로 끝나지 않고, 지속가능성을 고려한 기술들이 지금은 상상하기 어려운 산업군에서 큰 힘을 발휘하는 미래가 올 것이라고 확신합니다.</p>
+                <!-- <a href="#" class="card-link text-muted" style="text-decoration: none;">more</a> -->
+              </div>
+            </div>
+
+            
+            <div class="card" style="margin: 10px;">
+
+              <div class="card-uppercaption-t" style="background-color: rgba(209, 209, 209, 0.75)">
+                <p class="card-uppercapption" style="font-size: 15px; font-weight: bold; color: #444; text-align: center; margin: 8px;">Blanks</p>
+                </div>
+
+              <div class="card-body" style="padding: 20px;">
+                <p class="card-text">나아갈 방향에 대한 명확한 목표는 정하지 않았지만, 아래의 빈틈들을 메우기 위해 노력하면 재밌는 일들을 훨씬 잘 할 수 있을 것 같습니다: <br></p>
+                <p class="card-text"><ol>
+                  <li>경제에 대한 이해</li>
+                  <li>미학과 신경과학에 대한 공부</li>
+                  <li>프로그래밍 공부(알고리즘 등) 제대로 해야함</li>
+                  <li>블록체인 산업과 문화에 올라타야 함</li>
+                  <li>외국어 공부 해야 함</li>
+                  <li>어떤 사회가 좋은 사회인가에 대한 공부 필요. 그래야 철학을 담은 프로덕트를 만들 수 있음</li>
+                </ol></p>
+               
+                <!-- <a href="#" class="card-link">Card link</a> -->
+              </div>
+              
+            </div>
+
+            <div class="card" style="margin: 10px;">
+
+              <div class="card-uppercaption-t" style="background-color: rgba(209, 209, 209, 0.75)">
+                <p class="card-uppercapption" style="font-size: 15px; font-weight: bold; color: #444; text-align: center; margin: 8px;">Questions</p>
+                </div>
+
+              <div class="card-body" style="padding: 20px;">
+                <p class="card-text">요즘은 주로 이런 생각들을 합니다: <br></p>
+                <p class="card-text"><ol>
+                  <li>(마이페이지) Self Awareness 형성에 영향을 미치는 Mobile/Web App. Narrative 만들기와 NFT. 그게 결국 가치를 만드는 길 아닌가?</li>
+                  <li>(커뮤니티를 위한 앱) Over-globalization 된 세상에서 인스타그램과 같은 ‘verse’ 만들기. Local Platform들을 직접 만들어 운영하기.</li>
+                </ol></p>
+               
+                <!-- <a href="#" class="card-link">Card link</a> -->
+              </div>
+              
+            </div>
+
+
+
+            
+              <div class="footer" style="text-align: center; margin: 20px 0; color: grey">
+                Designed by Jonghan Park 2022
+              </div>
+              <br><br>
+            
+
+            
+
+         </div>
+        </div>
+
+     
+
+   <!-- <script type="text/javascript" src="./src/animation.js"></script> -->
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script><script  src="./script.js"></script>
+<!-- <script>alert('아직 업데이트 중입니다!')</script> -->
+</body>
+</html>
